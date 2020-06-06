@@ -1,0 +1,23 @@
+<section class="p-3">
+  <div class="container">
+    <div class="row">
+      <div class="col animated jackInTheBox delay-2s"></div>
+      <table class="table table-hover table-striped text-center table-secondary">
+        <tr>
+          <th>Product Id</th>
+          <th>Product Name</th>
+          <th>Cost</th>
+          <th>Brand</th>
+        </tr>
+        <tr *ngFor="let google of googles">
+          <td>{{google.pId}}</td>
+          <td>{{google.pName}}</td>
+          <td>{{google.pCost}}</td>
+          <td>{{google.pBrand}}</td>
+
+        </tr>
+      </table>
+      <button class="btn btn-secondary" (click)="backToProducts()">Back to Products</button>
+    </div>
+  </div>
+</section>

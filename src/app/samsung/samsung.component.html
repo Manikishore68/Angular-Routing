@@ -1,0 +1,24 @@
+<section class="p-3">
+  <div class="container">
+    <div class="row">
+      <div class="col animated jackInTheBox delay-2s">
+        <table class="table table-hover table-striped text-center">
+          <tr>
+            <th>Product Id</th>
+            <th>Product Name</th>
+            <th>Cost</th>
+            <th>Brand</th>
+          </tr>
+          <tr *ngFor="let samsung of samsungs">
+            <td>{{samsung.pId}}</td>
+            <td>{{samsung.pName}}</td>
+            <td>{{samsung.pCost}}</td>
+            <td>{{samsung.pCost}}</td>
+          </tr>
+        </table>
+
+        <button class="btn btn-success" (click)="backToProducts()"> Back to Products</button>
+      </div>
+    </div>
+  </div>
+</section>
